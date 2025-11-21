@@ -1,0 +1,53 @@
+body {
+  width: 320px;
+  background-color: #091428; /* LoL Dark Blue */
+  color: #f0e6d2; /* LoL Goldish White */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+.app-container { display: flex; flex-direction: column; gap: 10px; }
+
+header h2 { margin: 0; color: #c8aa6e; text-align: center; text-transform: uppercase; letter-spacing: 1px; font-size: 1.2em; }
+
+.search-bar { display: flex; gap: 5px; }
+input, select {
+  background: #1e282d; border: 1px solid #3c3c41; color: white; padding: 8px;
+  border-radius: 4px; flex-grow: 1; outline: none;
+}
+input:focus, select:focus { border-color: #c8aa6e; }
+
+button {
+  background: #c8aa6e; border: none; color: #091428; font-weight: bold; cursor: pointer;
+  padding: 8px 12px; border-radius: 4px; transition: 0.2s;
+}
+button:hover { background: #f0e6d2; }
+
+.card {
+  background: #1e2328; border: 1px solid #c8aa6e; padding: 10px; border-radius: 4px;
+  margin-top: 10px; animation: fadeIn 0.3s ease-in-out;
+}
+
+.profile-header { display: flex; align-items: center; gap: 15px; border-bottom: 1px solid #3c3c41; padding-bottom: 10px; margin-bottom: 10px; }
+#profileIcon { width: 60px; height: 60px; border-radius: 50%; border: 2px solid #c8aa6e; }
+h3 { margin: 0; font-size: 1.2em; color: white; }
+
+.rank-info { display: flex; flex-direction: column; gap: 5px; }
+.rank-badge {
+  font-size: 1.4em; font-weight: bold; color: #0acbe6;
+}
+
+.action-btn { width: 100%; margin-top: 10px; background: #0acbe6; color: #091428; }
+.action-btn:hover { background: #5ee7ff; }
+
+.hidden { display: none; }
+.error { color: #ff5b5b; text-align: center; font-size: 0.9em; background: rgba(255, 0, 0, 0.1); padding: 5px; border-radius: 4px; }
+
+.participant-list { list-style: none; padding: 0; font-size: 0.85em; }
+.participant-list li { padding: 4px 0; border-bottom: 1px solid #333; display: flex; justify-content: space-between; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}

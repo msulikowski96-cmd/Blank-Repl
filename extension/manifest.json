@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "DeepLol.gg Extension",
+  "version": "1.0",
+  "description": "Analiza graczy i meczów na żywo.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost:3000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "DeepLol Analyzer"
+  }
+}
